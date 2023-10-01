@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>textchange</title>
+        <style>
+           
+            button {
+                border-radius: 14px;
+                width: 8%;
+                height: 37px;     
+            }
+            h4 {
+                font-size: xx-large;
+                color: rgb(221, 27, 92);     
+            }
+            p {
+                font-size: 25px;
+            }
+            #container {
+                background-color: bisque;
+            }
+            
+        </style>
+    </head>
+    <body id="container"> 
+
+       
+            <h1 id="demo">DOM</h1>
+            <h2 id="text">Hello world</h2>
+           
+            <p id="para"> 
+                Lorem ipsum dolor,sit amet consectetur adipising <br>
+                Necessitatibus quidem delectus rem hic amini ex,neque <br>
+                modi,sapiente volutatum,commodi debits dolores <br>
+                Lorem ipsum dolor,sit amet consectetur adipising elit.
+            </p> 
+            <br>
+    
+            <button onclick="TextChange()">Change Text</button>
+            <button onclick="Bg_pink()">Bg change</button>
+            <button onclick="font_change()">Text change</button>
+            <button onclick="color_change()">color</button>
+            <button onclick="font_size()">font size</button>
+            <button onclick="Bg_border()">Border</button>
+           
+           
+            <br><br><br><br><br><br><br><br><br>
+            
+            
+        <script>
+
+            function TextChange() {
+               console.log('button clicked');
+               document.getElementById('text').innerHTML='Welcome to this page'
+            }
+             function Bg_pink() {
+                document.getElementById("container").style.backgroundColor = 'pink'
+            }
+            function font_change() {
+                document.getElementById("para").style.fontStyle = 'italic'
+            }
+             function color_change() {
+                document.getElementById("para").style.color = 'blue'
+            }
+            function font_size() {
+                document.getElementById("para").style.fontSize = '20px'
+            }
+            function Bg_border() {
+                document.getElementById("container").style.border = '2px solid black'
+            }
+        
+        </script>
+    </body>
+</html>
